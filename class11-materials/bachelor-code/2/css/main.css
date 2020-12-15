@@ -1,3 +1,37 @@
+* {
+	box-sizing:border-box;
+}
+
+
+.upperSection,.lowerSection {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 350px;
+}
+.upperSection div{
+display: flex;
+justify-content: center;
+	
+}
+div h1 {
+	font-size:3rem;
+}
+div h2 {
+	margin-right: 30px;
+	font-size: 2rem;
+	border: 5px solid red;
+	border-radius:10px;
+}
+
+
+
+
+
+
+
+
+
 .hidden{
 	display: none;
 }

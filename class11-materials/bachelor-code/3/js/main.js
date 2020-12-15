@@ -5,7 +5,14 @@ Array.from(contestants).forEach(element => element.addEventListener('click', che
 function checkForRose(click){
 	if(click.target.classList.contains('rose')){
 		document.querySelector('#nikki').classList.toggle('hidden')
+		soundWave()
 	}else{
 		alert("Wrong!");
 	}
+}
+
+soundWave = () => {
+	let winner = document.querySelector('#winnerTitle')
+	document.querySelector('#displayWinner').classList.toggle('hidden')
+	winner.innerHTML = document.querySelector('#nikki').id
 }
